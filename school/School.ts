@@ -52,18 +52,12 @@ async function main() {
                 console.log("                      ");
                 break;
             case "6":
-                var name = prompt("Please Enter Name- ");
-                var className = prompt("Please Enter Class- ");
-                var test = prompt("Please Enter Test Name- ");
-                var marks1 = prompt("Please Enter Math Marks- ");
-                var marks2 = prompt("Please enter Science Marks- ");
-                class6.setMarks(name, className, marks1, marks2, test);
+                class6.getTopper();
                 console.log("..............................................................");
                 console.log("                      ");
                 break;
             case "7":
-                // flag = false;
-                class6.getTopper();
+                flag = false;
                 break;
             default:
                 flag = false;

@@ -103,20 +103,29 @@ class Class6 {
         }
         let i=6;
         for (const [key, value] of Object.entries(data)) {
+            // let obj = {`class_${i}`:{}};
             if (key == `class_${i}`) {
-                let total = 0;
-                let name = null;
+                let average = 0;
+                let topperName = "";
                 for (const [key1,value1] of Object.entries(value)) {
                     let sum=0;
+                    let count = 0;
                     for(const [key2,value2] of Object.entries(value1)){
-                        for(let [key3, value3] of Object.entries(value2)){
-                            sum += Number(value3);
-                            // if(typeof sum== String)
-                        }
+                        sum += Number(value2.Math);
+                        sum += Number(value2.Science);
+                        count++;
+                    }
+                    sum = Math.round(sum/count);
+                    average = Math.max(sum,average);
+                    if(average==sum){
+                        topperName = String(key1);
                     }
                 }
+                Object.assign(topper,{[`class_${i}`]:{name: topperName, average: average}});
+                i++;
             }
         }
+        console.log("Topper from School: "+JSON.stringify(topper));
     }
 
 }
