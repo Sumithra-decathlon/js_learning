@@ -6,7 +6,7 @@ const class6 = new Class6();
 
 let flag = true;
 
-async function main() {
+function main() {
     // class6.setName("kishan");
     // class6.setName("prince");
     // class6.setName("kumar");
