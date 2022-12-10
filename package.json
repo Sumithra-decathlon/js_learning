@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "school": "npx ts-node --esm school/school",
+    "team": "npx ts-node --esm ipl/teamValidation"
   },
   "repository": {
     "type": "git",
