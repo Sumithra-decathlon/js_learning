@@ -1,6 +1,6 @@
 #!/usr/bin/env ts-node-script
 import data from "../data/schoolData.json";
-class Class6 {
+class Class {
     // name: String;
     setName(name: string, className: string) {
         // this.name = name;
@@ -129,4 +129,4 @@ class Class6 {
     }
 
 }
-export default Class6;
+export default Class;
