@@ -35,7 +35,7 @@ Structure -
     +-- school
         +-- Class.ts
             <In this file we are doing all code related work means get marks, set marks etc...>
-        +-- School.ts
+        +-- school.ts
             <In this file we are calling all methods>
 ```
 
@@ -50,10 +50,10 @@ Structure -
     +-- data
         +-- team.ts
             <In this file I am storing data related to team(RCB)>
-    +-- school
+    +-- ipl
         +-- ReadTeamData.ts
             <In this file I'm reading all the team data and sending to teamValidation>
-        +-- School.ts
+        +-- teamValidation.ts
             <In this file using console.assert I'm doing all validation part>
 ```
 
