@@ -58,16 +58,20 @@ Structure -
 ```
 
 
-To run `PS-1` - 
+#### To run `PS-1` - 
 ```aidl
 npm run school
-# Or
+```
+`or`
+```
 npx ts-node --esm school/school
 ```
-To run `PS-2` - 
+#### To run `PS-2` - 
 ```aidl
 npm run team
-# Or
+```
+`or`
+```
 npx ts-node --esm ipl/teamValidation
 ```
 
