@@ -25,6 +25,7 @@ To providing data from `Terminal`-
 
   - class name should be in this format - `class_name`, eg- ``class_6``
   - All three test name should be in this format - `T1/2/3`, eg. for test 1- ``T1``
+  - For setting marks, 1st marks is Math marks and 2nd marks is Science marks
 
 Structure - 
 ```aidl
@@ -57,13 +58,13 @@ Structure -
 ```
 
 
-To run `School` - 
+To run `PS-1` - 
 ```aidl
 npm run school
 # Or
 npx ts-node --esm school/school
 ```
-To run `Team` - 
+To run `PS-2` - 
 ```aidl
 npm run team
 # Or
