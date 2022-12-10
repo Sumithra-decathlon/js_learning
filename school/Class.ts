@@ -92,8 +92,6 @@ class Class {
         return flag;
     }
     getTopper(){
-        let topFromClass6, topFromClass7, topFromClass8, topFromClass9, topFromClass10;
-        let percentageFromClass6, percentageFromClass7, percentageFromClass8, percentageFromClass9, percentageFromClass10;
         let topper = {
             "class_6": null,
             "class_7": null,
