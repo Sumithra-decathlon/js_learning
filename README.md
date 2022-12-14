@@ -17,6 +17,7 @@ typescript: [https://docs.microsoft.com/en-us/learn/modules/typescript-get-start
     
     - Write a test that validates that the team has only foreign players.
     - Write a test that validates that there is at least one wicket keeper.
+    - Write a test that validates that RCB is not spending more than 35 crores in purchasing foreign players.
 
 #### Problem Statement 1- 
 This code has developed in such a way that all the data is taken by terminal for example - student name, marks, test, class.
