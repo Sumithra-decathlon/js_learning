@@ -1,35 +1,33 @@
 #!/usr/bin/env ts-node-script
 import { rcb } from "../data/team";
 class ReadTeamData {
-    getTeamDetails(team: any) {
+    getTeamDetails(team: Object) {
         let teamDetails = {
             "foreignPlayer": 0,
             "indianPlayer": 0,
             "wicketKeeper": 0,
             "batsman": 0,
             "bowler": 0,
-            "allRounder": 0
+            "allRounder": 0,
+            "totalBidForForeignPlayer": 0
         }
-        for (const [key, value] of Object.entries(team.player)) {
-            for (const [key1, value1] of Object.entries(value)) {
-                if (key1 == "country") {
-                    if (value1 != "India") {
-                        teamDetails.foreignPlayer++;
-                    } else if (value1 == "India") {
-                        teamDetails.indianPlayer++;
-                    }
-                }
-                if (key1 == "role") {
-                    if (value1 == "Wicket-keeper") {
-                        teamDetails.wicketKeeper++;
-                    } else if (value1 == "Batsman") {
-                        teamDetails.batsman++;
-                    } else if (value1 == "Bowler") {
-                        teamDetails.bowler++;
-                    }else if(value1 == "All-Rounder"){
-                        teamDetails.allRounder++;
-                    }
-                }
+        for (const [key, value] of Object.entries(Object(team).player)) {
+            if (Object(value).country != "India") {
+                teamDetails.foreignPlayer++;
+            } else if (Object(value).country == "India") {
+                teamDetails.indianPlayer++;
+            }
+            if (Object(value).role == "Wicket-keeper") {
+                teamDetails.wicketKeeper++;
+            } else if (Object(value).role == "Batsman") {
+                teamDetails.batsman++;
+            } else if (Object(value).role == "Bowler") {
+                teamDetails.bowler++;
+            } else if (Object(value).role == "All-Rounder") {
+                teamDetails.allRounder++;
+            }
+            if (Object(value).country != "India") {
+                teamDetails.totalBidForForeignPlayer += Number(Object(value).price_in_crores);
             }
         }
         return teamDetails;
