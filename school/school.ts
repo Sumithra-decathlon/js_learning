@@ -19,7 +19,7 @@ function main() {
             case "1":
                 var name = prompt("Please Enter Name- ");
                 var className = prompt("Please Enter Class- ");
-                classObj.setName(name, className);
+                classObj.setName(5, className);
                 console.log("..............................................................");
                 console.log("                      ");
                 break;
