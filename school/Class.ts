@@ -23,7 +23,7 @@ class Class {
         let flag = false;
         for (const [key, value] of Object.entries(data)) {
             if (key == className) {
-                for (let [key1, value1] of Object.entries(data.class_6)) {
+                for (let [key1, value1] of Object.entries(value)) {
                     if (key1 == name) {                                 //key1 = name
                         for (let [key2, value2] of Object.entries(value1)) {
                             if (key2 == test) {
